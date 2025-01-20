@@ -1,0 +1,15 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+class MaterialPoint:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+        self.initial_x = x 
+        self.initial_y = y
+        self.trajectory = [(x, y)]
+
+    def update_position(self, x, y):
+        self.x = x
+        self.y = y
+        self.trajectory.append((x, y))
